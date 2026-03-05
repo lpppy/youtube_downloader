@@ -159,7 +159,7 @@ youtube_downloader/
 
 ## 🖼️ 界面预览
 
-> 添加应用截图
+![主界面](screenshots/应用截图.png)
 
 ---
 
