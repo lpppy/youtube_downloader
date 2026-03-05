@@ -26,41 +26,96 @@
 
 ## 🚀 快速开始
 
-### 安装
-
-1. 克隆项目
+### 1. 克隆项目
 
 ```bash
 git clone https://github.com/lpppy/youtube_downloader.git
 cd youtube_downloader
 ```
 
-2. 安装依赖
+### 2. 安装依赖
+
+<details>
+<summary><b>🖥️ Windows</b></summary>
 
 ```bash
+# 方式一：使用 pip
 pip install -r requirements.txt
+
+# 方式二：如果 pip 不可用
+python -m pip install -r requirements.txt
 ```
 
-### 使用方法
+> 💡 提示：如果提示找不到 `pip`，请确保已安装 Python 并添加到环境变量
 
-#### 方式一：运行 Python 脚本
+</details>
+
+<details>
+<summary><b>🍎 macOS / 🐧 Linux</b></summary>
 
 ```bash
+# 方式一：使用 pip3
+pip3 install -r requirements.txt
+
+# 方式二：使用 Homebrew (macOS)
+brew install python
+pip3 install -r requirements.txt
+
+# 方式三：使用系统 Python
+python3 -m pip install -r requirements.txt
+```
+
+</details>
+
+---
+
+### 3. 运行应用
+
+<details>
+<summary><b>🖥️ Windows</b></summary>
+
+#### 方式一：双击启动（推荐）
+
+直接双击 `启动应用.bat` 文件即可运行
+
+#### 方式二：命令行启动
+
+```bash
+# 在文件夹空白处按住 Shift + 右键，选择"在此处打开 PowerShell 窗口"
 python main.py
+
+# 或者
+start 启动应用.bat
 ```
 
-#### 方式二：使用启动脚本
+</details>
 
-**macOS / Linux**
+<details>
+<summary><b>🍎 macOS / 🐧 Linux</b></summary>
+
+#### 方式一：使用启动脚本（推荐）
+
 ```bash
+# macOS
+./启动应用.command
+
+# Linux
 ./start.sh
 ```
 
-**Windows**
+#### 方式二：命令行启动
 
-双击 `启动应用.bat`
+```bash
+python3 main.py
+```
 
-### 操作步骤
+> 💡 如果提示权限不足，先执行：`chmod +x start.sh` 或 `chmod +x 启动应用.command`
+
+</details>
+
+---
+
+### 4. 使用步骤
 
 1. 在文本框中输入 YouTube URL（每行一个）
 2. 选择视频清晰度
@@ -84,7 +139,7 @@ youtube_downloader/
 │   └── config.py           # 配置文件
 ├── utils/
 │   └── __init__.py
-├── start.sh                # macOS/Linux 启动脚本
+├── start.sh                # Linux 启动脚本
 ├── 启动应用.bat            # Windows 启动脚本
 ├── 启动应用.command        # macOS 启动脚本
 └── requirements.txt        # 依赖列表
